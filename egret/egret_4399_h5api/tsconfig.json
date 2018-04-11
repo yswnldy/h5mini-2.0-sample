@@ -1,0 +1,12 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "noImplicitAny": false,
+        "sourceMap": false,
+        "outFile": "bin/egret_4399_h5api/egret_4399_h5api.js",
+        "allowJs": true
+    },
+    "include": [
+        "src"
+    ]
+}

@@ -1,0 +1,28 @@
+{
+    "engineVersion": "5.1.9",
+    "compilerVersion": "5.1.9",
+    "template": {},
+    "target": {
+        "current": "web"
+    },
+    "modules": [{
+            "name": "egret"
+        },
+        {
+            "name": "game"
+        },
+        {
+            "name": "tween"
+        },
+        {
+            "name": "assetsmanager"
+        },
+        {
+            "name": "promise"
+        },
+        {
+            "name": "egret_4399_h5api",
+            "path": "../egret_4399_h5api"
+        }
+    ]
+}
