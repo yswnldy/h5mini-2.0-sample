@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<c2addon>
+    <type>plugin</type>
+    <name>H5API</name>    
+    <version>2.0</version>
+    <author>www.4399api.com</author>
+    <website>http://www.4399api.com</website>
+    <documentation>http://www.4399api.com/res/api/html5</documentation>
+    <description>4399原创平台提供的Construct 2插件</description>
+</c2addon>
