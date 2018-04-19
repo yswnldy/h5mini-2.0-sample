@@ -252,7 +252,7 @@ var Main = (function (_super) {
                 console.log('获得排行榜', data);
             });
         }, this);
-        // 跳转到更多游戏
+        // 播放广告
         var playAd = new egret.TextField();
         this.addChild(playAd);
         playAd.text = "播放广告";
@@ -270,6 +270,9 @@ var Main = (function (_super) {
         playAd.addEventListener(egret.TouchEvent.TOUCH_BEGIN, function () {
             if (egret_4399_h5api.canPlayAd()) {
                 egret_4399_h5api.playAd();
+            }
+            else {
+                console.log('没有广告资源可播放');
             }
         }, this);
         //-------------------------------------------------------------
