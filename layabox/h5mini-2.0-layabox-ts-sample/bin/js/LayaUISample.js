@@ -17,8 +17,6 @@ var TestUI = /** @class */ (function (_super) {
     function TestUI() {
         var _this = _super.call(this) || this;
         //-----------------H5API使用案例---------------------
-        //跳转更多游戏
-        _this.moreGame.on(Laya.Event.CLICK, _this, _this.onMoreGame);
         //提交分数
         _this.submitScore.on(Laya.Event.CLICK, _this, _this.onSubmitScore);
         //获得排行榜
@@ -27,19 +25,19 @@ var TestUI = /** @class */ (function (_super) {
         _this.playAd.on(Laya.Event.CLICK, _this, _this.onPlayAd);
         return _this;
     }
-    TestUI.prototype.onMoreGame = function () {
-        Laya.Browser.window.h5api.moreGame();
-    };
+    //提交分数
     TestUI.prototype.onSubmitScore = function () {
         Laya.Browser.window.h5api.submitScore(100, function (data) {
             Laya.Browser.window.console.log("提交结果", data);
         });
     };
+    //获得排行榜
     TestUI.prototype.onGetRank = function () {
         Laya.Browser.window.h5api.getRank(function (data) {
             Laya.Browser.window.console.log("获得排行榜", data);
         });
     };
+    //播放广告
     TestUI.prototype.onPlayAd = function () {
         if (Laya.Browser.window.h5api.canPlayAd()) {
             Laya.Browser.window.h5api.playAd();

@@ -8,18 +8,12 @@ function TestUI() {
 	TestUI.super(this);
 
 	//-----------------H5API使用案例---------------------
-	//跳转更多游戏
-	this.moreGame.on(Event.CLICK, this, onMoreGame);
 	//提交分数
 	this.submitScore.on(Event.CLICK, this, onSubmitScore);
 	//获得排行榜
 	this.getRank.on(Event.CLICK, this, onGetRank);
 	//播放广告
 	this.playAd.on(Event.CLICK, this, onPlayAd);
-	//跳转更多游戏
-	function onMoreGame() {
-		window.h5api.moreGame();
-	}
 	//提交分数
 	function onSubmitScore() {
 		window.h5api.submitScore(100, function (data) {

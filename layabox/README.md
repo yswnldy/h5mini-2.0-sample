@@ -30,4 +30,4 @@
 > 
 > 如以下为AS案例：
 > 
-> ![使用API](https://i.imgur.com/qJimZAx.png) 
+> ![使用API](https://i.imgur.com/YJuwqn9.png)

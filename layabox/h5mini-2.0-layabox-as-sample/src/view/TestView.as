@@ -13,20 +13,12 @@ package view
 		public function TestView()
 		{
 			//-----------------H5API使用案例---------------------
-			//跳转更多游戏
-			moreGame.on(Event.CLICK, this, onMoreGame);
 			//提交分数
 			submitScore.on(Event.CLICK, this, onSubmitScore);
 			//获得排行榜
 			getRank.on(Event.CLICK, this, onGetRank);
 			//播放广告
 			playAd.on(Event.CLICK, this, onPlayAd);
-		}
-		
-		//跳转更多游戏
-		private function onMoreGame(event:Event):void
-		{
-			Browser.window.h5api.moreGame();
 		}
 		
 		//提交分数

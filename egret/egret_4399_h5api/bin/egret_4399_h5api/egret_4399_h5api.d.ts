@@ -4,11 +4,6 @@
 declare module egret_4399_h5api {
 
     /**
-     * 页面跳转到更多游戏
-     */
-    function moreGame(): void;
-
-    /**
      * 提交积分到排行榜
      * 
      * @param num           分数
