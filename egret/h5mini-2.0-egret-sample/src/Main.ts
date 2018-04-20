@@ -144,24 +144,6 @@ class Main extends egret.DisplayObjectContainer {
         this.textfield = textfield;
 
         //--------------------H5API使用示例----------------------------
-        // 跳转到更多游戏
-        let moreGame = new egret.TextField();
-        this.addChild(moreGame);
-        moreGame.text = "跳转到更多游戏";
-        moreGame.textAlign = egret.HorizontalAlign.CENTER;
-        moreGame.verticalAlign = egret.VerticalAlign.MIDDLE;
-        moreGame.x = 175;
-        moreGame.y = 235;
-        moreGame.width = 300;
-        moreGame.height = 60;
-        moreGame.background = true;
-        moreGame.backgroundColor = 0x555555;
-        moreGame.size = 24;
-        moreGame.textColor = 0xffffff;
-        moreGame.touchEnabled = true
-        moreGame.addEventListener(egret.TouchEvent.TOUCH_BEGIN, () => {
-            egret_4399_h5api.moreGame();
-        }, this);
 
         // 提交积分
         let submitScore = new egret.TextField();

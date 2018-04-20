@@ -8,18 +8,12 @@ class TestUI extends ui.test.TestPageUI {
 	constructor() {
 		super();
 		//-----------------H5API使用案例---------------------
-		//跳转更多游戏
-		this.moreGame.on(Laya.Event.CLICK, this, this.onMoreGame);
 		//提交分数
 		this.submitScore.on(Laya.Event.CLICK, this, this.onSubmitScore);
 		//获得排行榜
 		this.getRank.on(Laya.Event.CLICK, this, this.onGetRank);
 		//播放广告
 		this.playAd.on(Laya.Event.CLICK, this, this.onPlayAd);
-	}
-	//跳转更多游戏
-	private onMoreGame(): void {
-		Laya.Browser.window.h5api.moreGame();
 	}
 	//提交分数
 	private onSubmitScore(): void {

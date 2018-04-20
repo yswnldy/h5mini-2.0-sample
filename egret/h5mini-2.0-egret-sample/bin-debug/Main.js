@@ -194,24 +194,6 @@ var Main = (function (_super) {
         textfield.y = 135;
         this.textfield = textfield;
         //--------------------H5API使用示例----------------------------
-        // 跳转到更多游戏
-        var moreGame = new egret.TextField();
-        this.addChild(moreGame);
-        moreGame.text = "跳转到更多游戏";
-        moreGame.textAlign = egret.HorizontalAlign.CENTER;
-        moreGame.verticalAlign = egret.VerticalAlign.MIDDLE;
-        moreGame.x = 175;
-        moreGame.y = 235;
-        moreGame.width = 300;
-        moreGame.height = 60;
-        moreGame.background = true;
-        moreGame.backgroundColor = 0x555555;
-        moreGame.size = 24;
-        moreGame.textColor = 0xffffff;
-        moreGame.touchEnabled = true;
-        moreGame.addEventListener(egret.TouchEvent.TOUCH_BEGIN, function () {
-            egret_4399_h5api.moreGame();
-        }, this);
         // 提交积分
         var submitScore = new egret.TextField();
         this.addChild(submitScore);
@@ -252,7 +234,7 @@ var Main = (function (_super) {
                 console.log('获得排行榜', data);
             });
         }, this);
-        // 跳转到更多游戏
+        // 播放广告
         var playAd = new egret.TextField();
         this.addChild(playAd);
         playAd.text = "播放广告";
@@ -270,6 +252,9 @@ var Main = (function (_super) {
         playAd.addEventListener(egret.TouchEvent.TOUCH_BEGIN, function () {
             if (egret_4399_h5api.canPlayAd()) {
                 egret_4399_h5api.playAd();
+            }
+            else {
+                console.log('没有广告资源可播放');
             }
         }, this);
         //-------------------------------------------------------------
