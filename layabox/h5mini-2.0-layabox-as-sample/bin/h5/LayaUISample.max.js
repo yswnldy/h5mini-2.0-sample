@@ -37671,7 +37671,6 @@ var WebGLImage=(function(_super){
 //class ui.test.TestPageUI extends laya.ui.View
 var TestPageUI=(function(_super){
 	function TestPageUI(){
-		this.moreGame=null;
 		this.submitScore=null;
 		this.getRank=null;
 		this.playAd=null;
@@ -37685,7 +37684,7 @@ var TestPageUI=(function(_super){
 		this.createView(TestPageUI.uiView);
 	}
 
-	TestPageUI.uiView={"type":"View","props":{"width":600,"height":400},"child":[{"type":"Image","props":{"y":0,"x":0,"width":600,"skin":"comp/bg.png","sizeGrid":"30,4,4,4","height":400}},{"type":"Button","props":{"y":84,"x":237,"width":150,"var":"moreGame","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"更多游戏","height":37}},{"type":"Button","props":{"y":4,"x":563,"skin":"comp/btn_close.png","name":"close"}},{"type":"Button","props":{"y":147,"x":237,"width":150,"var":"submitScore","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"提交积分","height":37}},{"type":"Button","props":{"y":209,"x":237,"width":150,"var":"getRank","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"获取排行榜","height":37}},{"type":"Button","props":{"y":272,"x":237,"width":150,"var":"playAd","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"播放广告","height":37}}]};
+	TestPageUI.uiView={"type":"View","props":{"width":600,"height":400},"child":[{"type":"Image","props":{"y":0,"x":0,"width":600,"skin":"comp/bg.png","sizeGrid":"30,4,4,4","height":400}},{"type":"Button","props":{"y":4,"x":563,"skin":"comp/btn_close.png","name":"close"}},{"type":"Button","props":{"y":147,"x":237,"width":150,"var":"submitScore","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"提交积分","height":37}},{"type":"Button","props":{"y":209,"x":237,"width":150,"var":"getRank","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"获取排行榜","height":37}},{"type":"Button","props":{"y":272,"x":237,"width":150,"var":"playAd","skin":"comp/button.png","sizeGrid":"4,4,4,4","label":"播放广告","height":37}}]};
 	return TestPageUI;
 })(View)
 
@@ -38216,7 +38215,6 @@ var TextArea=(function(_super){
 var TestView=(function(_super){
 	function TestView(){
 		TestView.__super.call(this);
-		this.moreGame.on("click",this,this.onMoreGame);
 		this.submitScore.on("click",this,this.onSubmitScore);
 		this.getRank.on("click",this,this.onGetRank);
 		this.playAd.on("click",this,this.onPlayAd);
@@ -38224,11 +38222,6 @@ var TestView=(function(_super){
 
 	__class(TestView,'view.TestView',_super);
 	var __proto=TestView.prototype;
-	//跳转更多游戏
-	__proto.onMoreGame=function(event){
-		Browser.window.h5api.moreGame();
-	}
-
 	//提交分数
 	__proto.onSubmitScore=function(event){
 		Browser.window.h5api.submitScore(100,function(data){

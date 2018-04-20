@@ -80,16 +80,12 @@ AddCondition(2, cf_trigger, "H5API get rank complete", "积分API", "get rank co
 AddStringParam("Message", "Enter a string to alert.");
 AddAction(0, af_none, "Alert", "My category", "Alert {0}", "Description for my action!", "MyAction");
 */
-//初始化接口
-
-AddAction(0, af_none, "moreGame", "基础API", "moreGame()", "更多游戏", "moreGame");
-
 AddNumberParam("积分","输入你的游戏积分");
-AddAction(1, af_none, "submitScore", "积分API", "submitScore({0})", "提交积分", "submitScore");
+AddAction(0, af_none, "submitScore", "积分API", "submitScore({0})", "提交积分", "submitScore");
 
-AddAction(2, af_none, "getRank", "积分API", "getRank()", "获取积分排行榜", "getRank");
+AddAction(1, af_none, "getRank", "积分API", "getRank()", "获取积分排行榜", "getRank");
 
-AddAction(3, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
+AddAction(2, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
 
 
 

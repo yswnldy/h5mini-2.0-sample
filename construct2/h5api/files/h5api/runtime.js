@@ -30,7 +30,7 @@ cr.plugins_.H5API = function (runtime) {
 	// called on startup for each object type
 	typeProto.onCreate = function () {
 		var element = document.createElement("script");
-		element.setAttribute("src", "http://192.168.50.211:9555/h5api/h5mini/h5api.php");
+		element.setAttribute("src", "http://stat.api.4399.com/h5api/h5api.php");
 		document.getElementsByTagName('head')[0].appendChild(element);
 	};
 
@@ -138,10 +138,6 @@ cr.plugins_.H5API = function (runtime) {
 	//////////////////////////////////////
 	// Actions
 	function Acts() {};
-
-	Acts.prototype.moreGame = function () {
-		h5api.moreGame();
-	};
 
 	Acts.prototype.submitScore = function (score) {
 		h5api.submitScore(score, callback, this);
