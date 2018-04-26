@@ -25,13 +25,13 @@
 
 ### 添加H5API的地址
 
-> 打开你游戏项目的 `index.html`， 将H5API的地址 `http://stat.api.4399.com/h5api/h5api.php` 加入到 `<head></head>` 标签内。
+> 打开你游戏项目的 `index.html`， 将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api.php` 加入到 `<head></head>` 标签内。
 > 
-    <script src="http://stat.api.4399.com/h5api/h5api.php"></script> 
+    <script src="http://h.api.4399.com/h5mini-2.0/h5api.php"></script> 
 > 
 > 如下图
-> 
-![添加H5API地址](https://i.imgur.com/uvxW7G7.png)
+
+![H5API地址](https://i.imgur.com/303Y654.png)
 
 ##### - 提交积分
 
