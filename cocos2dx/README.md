@@ -15,7 +15,7 @@
 
 ### 1、安装API插件
 
-> 在CocosCreator编辑器内选择 `扩展\扩展商店` ，选择 `4399原创平台H5API插件` 并下载安装。
+> 在CocosCreator编辑器内选择 `扩展\扩展商店` ，或者打开此[API插件链接地址](http://store.cocos.com/stuff/show/178949.html)，选择 `4399原创平台H5API插件` 并下载安装。
 
 ### 2、构建项目与添加API
 
