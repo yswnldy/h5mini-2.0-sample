@@ -30,7 +30,9 @@ class TestUI extends ui.test.TestPageUI {
 	//播放广告
 	private onPlayAd(): void {
 		if (Laya.Browser.window.h5api.canPlayAd()) {
-			Laya.Browser.window.h5api.playAd();
+			Laya.Browser.window.h5api.playAd(function (data: Object): void {
+				Laya.Browser.window.console.log("广告状态", data);
+			});
 		}
 		else {
 			Laya.Browser.window.console.log("没有广告资源可播放");

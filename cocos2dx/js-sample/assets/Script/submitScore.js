@@ -35,6 +35,7 @@ cc.Class({
 
     start() {
         this.node.on('mousedown', function (event) {
+            //提交分数
             window.h5api.submitScore(100, function (obj) {
                 console.log('提交分数结果', obj);
             });

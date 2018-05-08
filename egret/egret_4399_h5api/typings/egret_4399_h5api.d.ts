@@ -4,6 +4,13 @@
 declare module egret_4399_h5api {
 
     /**
+     * 设置4399进度条进度
+     * 
+     * @param num 进度条进度
+     */
+    function progress(num: number): void;
+
+    /**
      * 提交积分到排行榜
      * 
      * @param num           分数
@@ -27,6 +34,8 @@ declare module egret_4399_h5api {
 
     /**
      * 播放广告
+     * 
+     * @param callback      广告播放状态的回调函数
      */
-    function playAd(): void;
+    function playAd(callback?: Function): void;
 }

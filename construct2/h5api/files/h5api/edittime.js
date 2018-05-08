@@ -64,6 +64,8 @@ AddCondition(1, cf_trigger, "H5API submit score complete", "积分API", "submit 
 
 AddCondition(2, cf_trigger, "H5API get rank complete", "积分API", "get rank complete", "获取积分排行榜是否成功", "getRankComplete");
 
+AddCondition(3, cf_trigger, "H5API play ad callback", "广告API", "play ad callback", "获取广告播放是否成功", "playAdCallback");
+
 ////////////////////////////////////////
 // Actions
 
@@ -80,14 +82,15 @@ AddCondition(2, cf_trigger, "H5API get rank complete", "积分API", "get rank co
 AddStringParam("Message", "Enter a string to alert.");
 AddAction(0, af_none, "Alert", "My category", "Alert {0}", "Description for my action!", "MyAction");
 */
+AddNumberParam("进度条","输入你的进度条进度");
+AddAction(0, af_none, "progress", "进度条API", "progress({0})", "设置进度条进度", "progress");
+
 AddNumberParam("积分","输入你的游戏积分");
-AddAction(0, af_none, "submitScore", "积分API", "submitScore({0})", "提交积分", "submitScore");
+AddAction(1, af_none, "submitScore", "积分API", "submitScore({0})", "提交积分", "submitScore");
 
-AddAction(1, af_none, "getRank", "积分API", "getRank()", "获取积分排行榜", "getRank");
+AddAction(2, af_none, "getRank", "积分API", "getRank()", "获取积分排行榜", "getRank");
 
-AddAction(2, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
-
-
+AddAction(3, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
 
 ////////////////////////////////////////
 // Expressions
@@ -103,6 +106,8 @@ AddAction(2, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd
 // example
 
 AddExpression(0, ef_return_string, "getRankData", "基础API", "getRankData", "返回排行榜数据");
+
+AddExpression(1, ef_return_string, "getAdState", "广告API", "getAdState", "返回广告播放状态");
 
 ////////////////////////////////////////
 ACESDone();

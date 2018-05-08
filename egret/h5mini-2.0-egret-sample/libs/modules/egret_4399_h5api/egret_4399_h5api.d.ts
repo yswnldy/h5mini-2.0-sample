@@ -27,6 +27,8 @@ declare module egret_4399_h5api {
 
     /**
      * 播放广告
+     * 
+     * @param callback      广告播放状态的回调函数
      */
-    function playAd(): void;
+    function playAd(callback: Function): void;
 }

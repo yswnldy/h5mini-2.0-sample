@@ -251,7 +251,9 @@ var Main = (function (_super) {
         playAd.touchEnabled = true;
         playAd.addEventListener(egret.TouchEvent.TOUCH_BEGIN, function () {
             if (egret_4399_h5api.canPlayAd()) {
-                egret_4399_h5api.playAd();
+                egret_4399_h5api.playAd(function (data) {
+                    console.log('回调数据', data);
+                });
             }
             else {
                 console.log('没有广告资源可播放');
