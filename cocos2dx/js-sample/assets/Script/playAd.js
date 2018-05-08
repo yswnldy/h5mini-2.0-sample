@@ -33,8 +33,16 @@ cc.Class({
 
     // onLoad () {},
 
-    start () {
-
+    start() {
+        this.node.on('mousedown', function (event) {
+            if (window.h5api.canPlayAd()) {
+                window.h5api.playAd(function (obj) {
+                    console.log('广告状态', obj)
+                });
+            } else {
+                console.log('没有广告资源可播放');
+            }
+        });
     },
 
     // update (dt) {},

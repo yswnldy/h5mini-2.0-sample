@@ -4,7 +4,7 @@ package view
 	import laya.ui.Box;
 	import laya.ui.Label;
 	import laya.utils.Browser;
-	
+
 	import ui.test.TestPageUI;
 	
 	public class TestView extends TestPageUI
@@ -44,7 +44,10 @@ package view
 		{
 			if (Browser.window.h5api.canPlayAd())
 			{
-				Browser.window.h5api.playAd();
+				Browser.window.h5api.playAd(function(data:Object):void
+				{
+					Browser.window.console.log("广告状态", data);
+				});
 			}
 			else
 			{

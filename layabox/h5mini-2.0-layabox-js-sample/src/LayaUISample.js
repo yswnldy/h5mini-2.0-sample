@@ -29,7 +29,9 @@ function TestUI() {
 	//播放广告
 	function onPlayAd() {
 		if (window.h5api.canPlayAd()) {
-			window.h5api.playAd();
+			window.h5api.playAd(function (data) {
+				console.log('广告状态', data);
+			});
 		} else {
 			console.log("没有广告资源可播放");
 		}

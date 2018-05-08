@@ -36,7 +36,7 @@ cc.Class({
     start () {
         this.node.on('mousedown', function (event) {
             window.h5api.getRank(function(obj){
-                console.log(obj);
+                console.log('获得排行榜', obj);
             });
         });
     },

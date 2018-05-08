@@ -10,6 +10,15 @@ var egret_4399_h5api = (function() {
     var inner = {};
 
     /**
+     * 设置4399进度条进度
+     * 
+     * @param {int} num 进度条进度 0到100
+     */
+    inner.progress = function(num) {
+        h5api.progress(num);
+    };
+
+    /**
      * 提交积分到排行榜
      * 
      * @param num           分数
@@ -38,9 +47,10 @@ var egret_4399_h5api = (function() {
 
     /**
      * 播放广告
+     * @param callback      广告播放状态回调
      */
-    inner.playAd = function() {
-        return h5api.playAd();
+    inner.playAd = function(callback) {
+        return h5api.playAd(callback);
     };
 
     return inner;

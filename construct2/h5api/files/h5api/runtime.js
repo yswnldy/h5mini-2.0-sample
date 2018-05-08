@@ -131,6 +131,10 @@ cr.plugins_.H5API = function (runtime) {
 	Cnds.prototype.getRankComplete = function () {
 		return true;
 	};
+
+	Cnds.prototype.playAdCallback = function () {
+		return true;
+	};
 	// ... other conditions here ...
 
 	pluginProto.cnds = new Cnds();
@@ -138,6 +142,10 @@ cr.plugins_.H5API = function (runtime) {
 	//////////////////////////////////////
 	// Actions
 	function Acts() {};
+
+	Acts.prototype.progress = function (num) {
+		h5api.progress(num);
+	};
 
 	Acts.prototype.submitScore = function (score) {
 		h5api.submitScore(score, callback, this);
@@ -179,8 +187,13 @@ cr.plugins_.H5API = function (runtime) {
 		}
 	};
 
+	var adState = "";
 	Acts.prototype.playAd = function () {
-		h5api.playAd();
+		var self = this;
+		h5api.playAd(function(obj){
+			adState = obj.code;
+			self.runtime.trigger(cr.plugins_.H5API.prototype.cnds.playAdCallback, self);
+		});
 	};
 
 	// ... other actions here ...
@@ -203,6 +216,14 @@ cr.plugins_.H5API = function (runtime) {
 	Exps.prototype.getRankData = function (ret) // 'ret' must always be the first parameter - always return the expression's result through it!
 	{
 		ret.set_string(rankData); // return our value
+		// ret.set_float(0.5);			// for returning floats
+		// ret.set_string("Hello");		// for ef_return_string
+		// ret.set_any("woo");			// for ef_return_any, accepts either a number or string
+	};
+
+	Exps.prototype.getAdState = function (ret) // 'ret' must always be the first parameter - always return the expression's result through it!
+	{
+		ret.set_string(adState); // return our value
 		// ret.set_float(0.5);			// for returning floats
 		// ret.set_string("Hello");		// for ef_return_string
 		// ret.set_any("woo");			// for ef_return_any, accepts either a number or string

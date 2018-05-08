@@ -34,9 +34,10 @@ var egret_4399_h5api = (function () {
     };
     /**
      * 播放广告
+     * @param callback      广告播放状态回调
      */
-    inner.playAd = function () {
-        return h5api.playAd();
+    inner.playAd = function (callback) {
+        return h5api.playAd(callback);
     };
     return inner;
 })();
