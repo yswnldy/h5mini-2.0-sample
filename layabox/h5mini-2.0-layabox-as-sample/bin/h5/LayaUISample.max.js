@@ -38239,7 +38239,9 @@ var TestView=(function(_super){
 	//播放广告
 	__proto.onPlayAd=function(event){
 		if (Browser.window.h5api.canPlayAd()){
-			Browser.window.h5api.playAd();
+			Browser.window.h5api.playAd(function(data){
+				Browser.window.console.log("广告状态",data);
+			});
 		}
 		else{
 			Browser.window.console.log("没有广告资源可播放");
