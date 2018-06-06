@@ -25,9 +25,9 @@
 
 ### 添加H5API的地址
 
-> 打开你游戏项目的 `index.html`， 将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api.php` 加入到 `<head></head>` 标签内。
+> 打开你游戏项目的 `index.html`， 将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api-interface.php` 加入到 `<head></head>` 标签内。
 > 
-    <script src="http://h.api.4399.com/h5mini-2.0/h5api.php"></script> 
+    <script src="http://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script> 
 > 
 > 如下图
 
