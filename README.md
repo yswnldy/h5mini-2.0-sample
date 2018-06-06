@@ -31,7 +31,7 @@
 > 
 > 如下图
 
-![H5API地址](https://i.imgur.com/303Y654.png)
+![H5API地址](https://i.imgur.com/XLIsD0C.png)
 
 ##### - 进度条
 
