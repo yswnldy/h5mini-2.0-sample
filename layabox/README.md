@@ -14,13 +14,13 @@
 
 ### 1. 添加H5API的地址
 
-> 在你游戏项目下，打开 `bin\index.html` 页面模板，将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api.php` 加入到 `<head></head>` 标签内。
+> 在你游戏项目下，打开 `bin\index.html` 页面模板，将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api-interface.php` 加入到 `<head></head>` 标签内。
 > 
-    <script src="http://h.api.4399.com/h5mini-2.0/h5api.php"></script> 
+    <script src="http://h.api.4399.com/h5mini-2.0/h5api-interface.php"></script> 
 > 
 > 如下图
 > 
-![H5API地址](https://i.imgur.com/303Y654.png)
+![H5API地址](https://i.imgur.com/XLIsD0C.png)
 
 ### 2、使用API
 

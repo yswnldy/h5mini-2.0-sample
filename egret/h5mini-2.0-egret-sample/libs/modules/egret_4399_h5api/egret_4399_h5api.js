@@ -1,12 +1,20 @@
 // 自动引用H5API地址
 var element = document.createElement('script');
-element.setAttribute('src', 'http://h.api.4399.com/h5mini-2.0/h5api.php');
+element.setAttribute('src', 'http://h.api.4399.com/h5mini-2.0/h5api-interface.php');
 document.getElementsByTagName('head')[0].appendChild(element);
 /**
  * 用于白鹭引擎的API接口
  */
 var egret_4399_h5api = (function () {
     var inner = {};
+    /**
+     * 设置4399进度条进度
+     *
+     * @param {int} num 进度条进度 0到100
+     */
+    inner.progress = function (num) {
+        h5api.progress(num);
+    };
     /**
      * 提交积分到排行榜
      *

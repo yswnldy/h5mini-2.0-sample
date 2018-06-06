@@ -40,7 +40,7 @@ Editor.Panel.extend({
             // 添加html代码
             let indexHtmlFile = PATH.join(platformRootDir, 'index.html');
             if (FS.existsSync(indexHtmlFile)) {
-              let script = "<script src=\"http://h.api.4399.com/h5mini-2.0/h5api.php\"></script>";
+              let script = "<script src=\"http://h.api.4399.com/h5mini-2.0/h5api-interface.php\"></script>";
               let indexHtmlFileData = FS.readFileSync(indexHtmlFile, 'utf-8');
               if (indexHtmlFileData.indexOf(script) >= 0) {
                 console.log("add html code finished");
