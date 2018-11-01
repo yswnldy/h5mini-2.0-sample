@@ -82,15 +82,24 @@ AddCondition(3, cf_trigger, "H5API play ad callback", "广告API", "play ad call
 AddStringParam("Message", "Enter a string to alert.");
 AddAction(0, af_none, "Alert", "My category", "Alert {0}", "Description for my action!", "MyAction");
 */
-AddNumberParam("进度条","输入你的进度条进度");
-AddAction(0, af_none, "progress", "进度条API", "progress({0})", "设置进度条进度", "progress");
 
-AddNumberParam("积分","输入你的游戏积分");
-AddAction(1, af_none, "submitScore", "积分API", "submitScore({0})", "提交积分", "submitScore");
+AddAction(0, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
 
-AddAction(2, af_none, "getRank", "积分API", "getRank()", "获取积分排行榜", "getRank");
+AddAction(1, af_none, "share", "分享API", "share()", "分享游戏信息给好友", "share");
 
-AddAction(3, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd");
+AddAction(2, af_none, "isLogin", "排行榜API", "isLogin()", "判断用户是否已登录", "isLogin");
+
+AddNumberParam("积分","输入玩家的游戏积分");
+AddAction(3, af_none, "submitRanking", "排行榜API", "submitRanking({0})", "提交玩家分数到排行榜", "submitRanking");
+
+AddAction(4, af_none, "getMyRanking", "排行榜API", "getMyRanking()", "获取玩家当前排名", "getMyRanking");
+
+AddNumberParam("页码","排行榜列表页码 从0开始");
+AddNumberParam("每页条数","每页排行榜列表的排名数量");
+AddAction(5, af_none, "getRanking", "排行榜API", "getRanking({0}, {1})", "获取玩家排名列表", "getRanking");
+
+AddNumberParam("条数","前后相邻的排名数量");
+AddAction(6, af_none, "getNearRanking", "排行榜API", "getNearRanking({0})", "获取玩家当前排名附近的排名列表", "getNearRanking");
 
 ////////////////////////////////////////
 // Expressions
@@ -105,9 +114,18 @@ AddAction(3, af_none, "playAd", "广告API", "playAd()", "播放广告", "playAd
 
 // example
 
-AddExpression(0, ef_return_string, "getRankData", "基础API", "getRankData", "返回排行榜数据");
+AddExpression(0, ef_return_string, "getAdState", "广告API", "getAdState", "返回广告播放状态");
 
-AddExpression(1, ef_return_string, "getAdState", "广告API", "getAdState", "返回广告播放状态");
+AddNumberParam("用户编号","输入当前用户编号");
+AddExpression(1, ef_return_string, "getUserAvatar", "排行榜API", "getUserAvatar({0})", "获得用户头像地址，高宽为120*120像素", "getUserAvatar");
+
+AddNumberParam("用户编号","输入当前用户编号");
+AddExpression(2, ef_return_string, "getUserSmallAvatar", "排行榜API", "getUserSmallAvatar({0})", "获得用户小头像地址，高宽为48*48像素", "getUserSmallAvatar");
+
+AddNumberParam("用户编号","输入当前用户编号");
+AddExpression(3, ef_return_string, "getUserBigAvatar", "排行榜API", "getUserBigAvatar({0})", "获得用户大头像地址，高宽为200*200像素", "getUserBigAvatar");
+
+AddExpression(0, ef_return_string, "getRankData", "基础API", "getRankData", "返回排行榜数据");
 
 ////////////////////////////////////////
 ACESDone();

@@ -35,4 +35,4 @@
 >
 > 如图所示：
 >  
-> ![提交分数](https://i.imgur.com/LwGfthL.png)
+> ![提交分数](https://i.imgur.com/wcMi8dR.png)
