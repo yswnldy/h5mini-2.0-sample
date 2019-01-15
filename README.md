@@ -23,6 +23,8 @@
 
 ## H5API使用及函数说明
 
+**详细使用请查看对应案例和文档**
+
 ### 添加H5API的地址
 
 > 打开你游戏项目的 `index.html`， 将H5API的地址 `http://h.api.4399.com/h5mini-2.0/h5api-interface.php` 加入到 `<head></head>` 标签内。

@@ -1,0 +1,55 @@
+2018-05-08T06:15:08.204Z - normal: Load ~/.CocosCreator/settings.json
+2018-05-08T06:15:08.214Z - normal: checking language setting...
+2018-05-08T06:15:08.214Z - normal: Language: zh
+2018-05-08T06:15:10.334Z - success: protocol editor-framework registered
+2018-05-08T06:15:10.334Z - success: protocol app registered
+2018-05-08T06:15:10.335Z - success: protocol theme registered
+2018-05-08T06:15:10.335Z - success: protocol packages registered
+2018-05-08T06:15:10.335Z - success: protocol unpack registerred
+2018-05-08T06:15:10.335Z - success: protocol disable-commonjs registerred
+2018-05-08T06:15:10.668Z - normal: connected!
+2018-05-08T06:15:10.676Z - normal: Check project E:\git\cocos2d\js-sample
+2018-05-08T06:15:10.682Z - normal: Initializing Cocos2d
+2018-05-08T06:15:10.977Z - normal: Initializing Asset Database
+2018-05-08T06:15:11.027Z - success: protocol uuid registerred
+2018-05-08T06:15:11.027Z - success: protocol db registerred
+2018-05-08T06:15:11.027Z - success: protocol thumbnail registerred
+2018-05-08T06:15:11.027Z - normal: Loading editor/builtin packages
+2018-05-08T06:15:11.054Z - success: anysdk loaded
+2018-05-08T06:15:11.217Z - success: assets loaded
+2018-05-08T06:15:11.220Z - success: builder loaded
+2018-05-08T06:15:11.223Z - success: cocos-analytics loaded
+2018-05-08T06:15:11.227Z - success: console loaded
+2018-05-08T06:15:11.275Z - success: fb-instant-games loaded
+2018-05-08T06:15:11.280Z - success: hierarchy loaded
+2018-05-08T06:15:11.284Z - success: inspector loaded
+2018-05-08T06:15:11.285Z - success: keystore loaded
+2018-05-08T06:15:11.288Z - success: node-library loaded
+2018-05-08T06:15:11.290Z - success: package-asset loaded
+2018-05-08T06:15:11.293Z - success: preferences loaded
+2018-05-08T06:15:11.295Z - success: project-exporter loaded
+2018-05-08T06:15:11.315Z - success: project-importer loaded
+2018-05-08T06:15:11.318Z - success: project-settings loaded
+2018-05-08T06:15:11.321Z - success: ui-kit loaded
+2018-05-08T06:15:11.323Z - success: ui-grid loaded
+2018-05-08T06:15:11.326Z - success: scene loaded
+2018-05-08T06:15:11.328Z - success: sprite-editor loaded
+2018-05-08T06:15:11.332Z - success: store loaded
+2018-05-08T06:15:11.337Z - success: timeline loaded
+2018-05-08T06:15:11.337Z - normal: Loading builtin packages
+2018-05-08T06:15:11.340Z - success: asset-db-debugger loaded
+2018-05-08T06:15:11.342Z - success: code-editor loaded
+2018-05-08T06:15:11.342Z - success: color-picker loaded
+2018-05-08T06:15:11.345Z - success: package-manager loaded
+2018-05-08T06:15:11.352Z - success: sdkbox loaded
+2018-05-08T06:15:11.355Z - success: tester loaded
+2018-05-08T06:15:11.357Z - success: ui-kit-preview-extra loaded
+2018-05-08T06:15:11.359Z - success: ui-kit-preview loaded
+2018-05-08T06:15:11.360Z - success: ui-tree loaded
+2018-05-08T06:15:12.883Z - normal: Initializing project E:\git\cocos2d\js-sample
+2018-05-08T06:15:12.887Z - normal: Loading packages
+2018-05-08T06:15:12.893Z - normal: Watching packages
+2018-05-08T06:15:12.909Z - normal: Run Application
+2018-05-08T06:15:13.529Z - success: preview server running at http://localhost:7456
+2018-05-08T06:15:19.856Z - normal: 1.9.0
+2018-05-08T06:20:51.980Z - info: shutdown preview server
