@@ -152,7 +152,7 @@
 
 > 直接调用即可
 
-h5api.showRanking()
+    h5api.showRanking()
 
 ##### -提交玩家分数到排行榜
 
