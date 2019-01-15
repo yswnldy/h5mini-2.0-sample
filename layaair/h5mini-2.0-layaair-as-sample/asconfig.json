@@ -1,0 +1,12 @@
+{
+    "config": "js",
+    "compilerOptions": {
+        "source-path": [
+            "src",
+            "libs/laya/src"
+        ]
+    },
+    "files": [
+        "src/Main.as"
+    ]
+}
