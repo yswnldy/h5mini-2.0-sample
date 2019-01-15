@@ -6,7 +6,7 @@
 		"libs/modules/tween/tween.js",
 		"libs/modules/assetsmanager/assetsmanager.js",
 		"libs/modules/promise/promise.js",
-		"libs/modules/egret_4399_h5api/egret_4399_h5api.js"
+		"libs/egret_4399_h5api/bin/egret_4399_h5api.js"
 	],
 	"game": [
 		"bin-debug/LoadingUI.js",

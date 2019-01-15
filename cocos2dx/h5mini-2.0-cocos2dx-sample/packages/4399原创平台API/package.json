@@ -1,0 +1,19 @@
+{
+  "name": "plugin-4399-h5api",
+  "version": "1.0.0",
+  "description": "4399原创平台H5API插件",
+  "author": "www.4399api.com",
+  "main": "main.js",
+  "main-menu": {
+    "i18n:MAIN_MENU.package.title/plugin-4399-h5api": {
+      "message": "plugin-4399-h5api:open"
+    }
+  },
+  "panel": {
+    "main": "panel/index.js",
+    "type": "dockable",
+    "title": "plugin-4399-h5api",
+    "width": 400,
+    "height": 300
+  }
+}

@@ -1,11 +1,12 @@
 {
-    "engineVersion": "5.1.9",
-    "compilerVersion": "5.1.9",
+    "engineVersion": "5.2.13",
+    "compilerVersion": "5.2.13",
     "template": {},
     "target": {
         "current": "web"
     },
-    "modules": [{
+    "modules": [
+        {
             "name": "egret"
         },
         {
@@ -22,7 +23,7 @@
         },
         {
             "name": "egret_4399_h5api",
-            "path": "../egret_4399_h5api"
+            "path": "./libs/egret_4399_h5api/bin"
         }
     ]
 }
